@@ -2,6 +2,10 @@
 Lấy danh sách người dùng từ backend về
 */
 $(document).ready(function () {
+    function themNguoiDung(){
+        console.log("themNguoiDung");
+    }
+
     var mangNguoiDung = [];
     var nguoiDungService = new NguoiDungService();
     var ajaxNguoiDung = nguoiDungService.LayDanhSachNguoiDung();
